@@ -1,0 +1,20 @@
+{
+  "name": "tizen-sdb",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pchangbin/node-tizen-sdb.git"
+  },
+  "keywords": ["tizen", "sdb", "sdk", "wrapper", "interface"],
+  "author": "Changbin Park <pchangbin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pchangbin/node-tizen-sdb/issues"
+  },
+  "homepage": "https://github.com/pchangbin/node-tizen-sdb#readme"
+}
