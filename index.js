@@ -1,11 +1,13 @@
 'use strict';
 
-/* global module, child_process, os */
+const os = require('os');
+const child_process = require('child_process');
+
 const {execFile, spawnSync} = child_process;
 
 const execName = 'sdb';
 (function checkSDBAvailable() {
-  const whereis = os.platform().includes('win') ? 'where' : 'which';
+  const whereis = os.platform().includes('win32') ? 'where' : 'which';
   if (spawnSync(whereis, [execName]).status !== 0) {
     throw new Error(`SDB command ${execName} is not available in PATH.`);
   }
